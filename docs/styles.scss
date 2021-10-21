@@ -1,0 +1,137 @@
+html{
+	margin: 0; 
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background: #444
+}
+$colorAzul: #4ae;
+$colorLetras: #fff;
+h1{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color:$colorAzul;
+	font-size: 3rem;
+	margin: 0.5rem;
+}
+
+.almacen{
+	display: flex;
+	align-items: center;
+	// justify-content: ;
+	gap: 1rem;
+	.asd{
+		align-self: center;
+		width: 100%;
+		text-align: auto;
+		margin: 1rem 0.3rem  ;
+		padding: 1rem 2.5rem;
+	}
+	.asd:active{
+		background-color: $colorAzul;
+	}
+	button{
+		background-color: transparent;
+		border: 3px solid $colorAzul;
+		color: $colorLetras;
+	}
+	.opcionColor{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+		 .elegirColor{
+			margin: 1rem 0.3rem;
+			padding: 1rem;
+			:active{
+				background-color: #4ae;
+				
+			}
+		 #colorInput{
+			width: 100%;
+			
+		}
+			
+		} 
+		.atr{
+			margin: 1rem 0.3rem;
+			background-color: #4ae;
+			
+		} 	
+	}
+	.fromulario{
+		display: flex;
+		flex-direction: column;
+		.numCasillasLabel{
+			text-align: center;
+			color: $colorLetras;
+			font-size: 1.3rem;
+			
+		}			
+	}
+	
+
+	.container{	
+		min-width: 500px; 
+		max-width: 960px;
+		display: grid;	
+		box-sizing: content-box; 
+		border: 12px solid $colorAzul;
+		background-color: #eee;
+		.item{
+			position: relative;
+			color:red;	
+			box-sizing: border-box; 
+			/* margin: 0; */
+			transition: all 0.4s ease-out;
+		}
+		.variables{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	
+	.almacen{
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		/* justify-content: space-evenly; */
+		.container{
+			margin: 0;
+			
+			// min-width: 300px;
+			min-width: 250px;
+			height: auto;
+			
+		}
+		.fromulario>input{
+			margin: 0;
+			width: 90vw;
+			
+		}
+		.numCasillasLabel{
+			margin-bottom: 1rem;
+		}
+
+		.opcionColor{
+			 width: 90vw;
+			display: flex;
+			flex-wrap: wrap;
+			 flex-direction: row;			
+			margin: 0;
+			.elegirColor{
+				width: 45vw;
+				// max-width: 45vw;
+				min-height:22vw;
+				// padding: auto;
+				
+				 margin: auto;
+		   }
+		}		
+	}	
+}
